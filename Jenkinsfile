@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("cloning git"){
             steps{
-                git 'https://github.com/ravdy/hello-world.git'
+                git 'https://github.com/vysnu96/azure-buld.git'
             }
         }
         stage("build code"){

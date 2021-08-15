@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("cloning git"){
             steps{
-                git 'https://github.com/vysnu96/azure-buld.git'
+                git branch: 'main', credentialsId: 'github-credentials', url: 'https://github.com/vysnu96/azure-build.git'
             }
         }
         stage("build code"){
